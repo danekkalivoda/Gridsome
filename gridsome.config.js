@@ -6,5 +6,21 @@
 
 module.exports = {
   siteName: "Gridsome",
-  plugins: []
+  plugins: [
+    {
+      use: 'gridsome-plugin-tailwindcss',
+      options: {
+       //tailwindConfig: './some/file/js',
+       //purgeConfig: {},
+       //presetEnvConfig: {},
+       shouldPurge: true,
+       shouldImport: true,
+       shouldTimeTravel: true,
+      },
+      use: `gridsome-plugin-netlify-cms`,
+      options: {
+        modulePath: `src/admin/index.js` 
+      }
+    }
+  ]
 };
