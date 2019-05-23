@@ -5,18 +5,20 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: "Gridsome",
+  siteName: "Gridsome & tailwind",
   plugins: [
     {
       use: 'gridsome-plugin-tailwindcss',
       options: {
-       //tailwindConfig: './some/file/js',
+       tailwindConfig: 'tailwind.config.js',
        //purgeConfig: {},
        //presetEnvConfig: {},
        shouldPurge: true,
        shouldImport: true,
        shouldTimeTravel: true,
       },
+    },
+    {
       use: `gridsome-plugin-netlify-cms`,
       options: {
         modulePath: `src/admin/index.js` 
