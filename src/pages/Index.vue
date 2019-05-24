@@ -6,7 +6,6 @@
     <h1 class="text-xl font-bold mb-8">{{ $static.metaData.siteName }}</h1>
 
     <p class="max-w-md m-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores</p>
-
   </Layout>
 </template>
 
